@@ -70,6 +70,7 @@ header {
 main {
     display:flex;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap:10px;
     
@@ -111,7 +112,8 @@ section a {
 section a:hover {
     background-color:  rgb(220, 92, 128);
     /* color: #333; */
-    color:white
+    color:white;
+    margin-left:10px;
 }
 
 section.switch a {
