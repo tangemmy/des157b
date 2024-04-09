@@ -1,0 +1,163 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+header{
+    margin:auto;
+    text-align: center;
+}
+/* Page styling */
+body {
+    font-family: 'inconsolata';
+    /* background-color: #333; */
+    background-image: url(images/light.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(76, 61, 61);
+    transition: all 2s;
+}
+
+body.switch {
+    /* background-color: rgb(235, 235, 235); */
+    background-image: url(images/dark.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #dedede;
+}
+body.switch h3{
+color:#333
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    /* background-color: rgb(235, 235, 235);
+    color: #333; */
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+}
+
+/* #banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+} */
+
+main {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    
+}
+
+main section {
+    border: 3px rgb(158, 220, 237) dashed;
+    margin:10px;
+    width:350px;
+    height:auto;
+    padding:10px
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+section{
+    background-color: rgb(255, 253, 251);
+  
+}
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(220, 92, 128);
+}
+
+section a:hover {
+    background-color:  rgb(220, 92, 128);
+    /* color: #333; */
+    color:white
+}
+
+section.switch a {
+     color: #333; 
+    
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color:  rgb(220, 92, 128);
+    color: white;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: rgb(135, 31, 80);
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(73, 160, 236);
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #0c4d72;
+    color: rgb(235, 235, 235)
+}
+@media (min-width:600px){
+    main{
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1em auto;
+    }
+    main section {
+        flex: 1;
+        border: 3px rgb(158, 220, 237) dashed;
+        margin: 0 .25em;
+        padding: 1em;
+    }
+}
