@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(160, 179, 162);
+    position:relative;
+    font-family: 'Reenie Beanie';
+}
+#v1{
+height:370px;
+width:auto;
+position:absolute;
+left:40px;
+top:280px;
+transform: rotate(-2deg)
+}
+#v2{
+    height:auto;
+    width:400px;
+    position:absolute;
+    left:240px;
+    top:100px;
+    transform: rotate(-10deg);
+    }
+#v3{
+    height:auto;
+    width:400px;
+    position:absolute;
+    left:600px;
+    top:450px;
+    transform: rotate(5deg);
+    }
+#v4{
+    height:300px;
+    width:auto;
+    position:absolute;
+    left:1100px;
+    top:390px;
+    transform: rotate(5deg);
+    z-index: -2;
+    }
+#v5{
+    height:300px;
+    width:auto;
+    position:absolute;
+    left:700px;
+    top:50px;
+    transform: rotate(-7deg);
+    
+    }
+#v6{
+    height:auto;
+    width:400px;
+    position:absolute;
+    left:1000px;
+    top:50px;
+    transform: rotate(10deg);
+    }
+body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+       }
+footer {
+        margin-top: auto;
+        width: 100%; /* Ensure the footer spans the full width */
+        text-align: right; /* Center the content inside the footer */
+        line-height: 1em;
+       }
+footer p{margin:0;}
+a{
+    text-decoration: none;
+    color:green;
+}
