@@ -1,7 +1,51 @@
 body{
-    background-color: rgb(160, 179, 162);
+    /* background-color: rgb(160, 179, 162); */
+    background-image: url(images/testtable.jpeg);
     position:relative;
     font-family: 'Reenie Beanie';
+}
+.hidden{
+    opacity:0;
+}
+.showing{
+    opacity:1;
+}
+#quote p {
+    position: absolute;
+    padding: .5em;
+    font-size: 3em;
+    transition: all 2.5s;
+    
+    color:rgb(43, 36, 36);
+    z-index: 7;
+}
+#line1 {
+   top: -8%;
+    left: 0%;
+    background-color: rgb(255, 193, 245);
+}
+
+#line2 {
+    top: 35%;
+    left: 15%;
+    background-color: rgb(255, 201, 94);
+}
+
+#line3 {
+    bottom: 10%;
+    left: 16%;
+    background-color: rgb(152, 223, 255);
+}
+#line4{
+    top:40%;
+    left:30%;
+    font-size: 100px;
+    background-color: rgb(255, 102, 94);
+}
+#line5{
+    right:3%;
+    bottom:3%;
+    background-color: rgb(95, 190, 108);
 }
 #v1{
 height:370px;
@@ -34,7 +78,7 @@ transform: rotate(-2deg)
     left:1100px;
     top:390px;
     transform: rotate(5deg);
-    z-index: -2;
+   
     }
 #v5{
     height:300px;
@@ -59,13 +103,15 @@ body {
         min-height: 100vh;
        }
 footer {
-        margin-top: auto;
-        width: 100%; /* Ensure the footer spans the full width */
-        text-align: right; /* Center the content inside the footer */
-        line-height: 1em;
+        position:absolute;
+        bottom:0%;
+        left:45%;
+        font-size: 20px;
+
+        text-align: center;
        }
 footer p{margin:0;}
 a{
-    text-decoration: none;
-    color:green;
+    
+    color:rgb(105, 152, 196);
 }
