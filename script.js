@@ -4,6 +4,7 @@
     const button = document.querySelector('button');
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
+    const bannerImg = document.querySelector('#banner img');
     const sections = document.querySelectorAll('section')
     let mode = 'dark';
 
@@ -12,7 +13,7 @@
             body.className = 'switch';
             banner.className = 'switch';
             button.className = 'switch';
-            
+            bannerImg.src="images/nightcitywindow.png";
             for (const section of sections) {
                 section.className = 'switch';
             }
@@ -21,6 +22,7 @@
             body.removeAttribute('class');
            banner.removeAttribute('class');
             button.removeAttribute('class');
+            bannerImg.src="images/daycitywindow.png";
             for (const section of sections) {
                 section.removeAttribute('class');
             }

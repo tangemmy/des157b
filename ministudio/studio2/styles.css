@@ -1,0 +1,25 @@
+body, p ,h1, h2, h3, header{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3{
+    font-family: 'modak';
+    color:rgb(82, 52, 40);
+    font-weight: 400;
+}
+h1{
+    font-size:4em;
+    text-align: center;
+}
+header{
+    margin:auto;
+    padding:20px;
+}
+body{
+    font-family: 'Reenie Beanie';
+    background-color: antiquewhite;
+}
+p{
+    font-size: 3em;
+    text-align: center;
+}
