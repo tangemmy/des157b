@@ -4,7 +4,7 @@ body, p ,h1, h2, h3, header{
 }
 h1,h2,h3{
     font-family: 'modak';
-    color:rgb(82, 52, 40);
+    color:rgb(249, 236, 231);
     font-weight: 400;
 }
 h1{
@@ -14,6 +14,7 @@ h1{
 header{
     margin:auto;
     padding:20px;
+    background-color:rgb(112, 76, 50);
 }
 body{
     font-family: 'Reenie Beanie';
@@ -22,4 +23,18 @@ body{
 p{
     font-size: 3em;
     text-align: center;
+    color:rgb(112, 76, 50);
+}
+img{
+    display:block;
+    margin:auto;
+}
+#date{
+    padding-top:10px;
+}
+#foodpic{
+    background-color: rgb(155, 204, 225);
+    width:500px;
+    margin:auto;
+    border-radius: 50px;
 }

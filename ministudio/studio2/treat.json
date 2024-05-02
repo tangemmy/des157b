@@ -1,52 +1,62 @@
 {
     "day 1" : {
-    "date" : "4/1",
-    "treat" : "none",
-    "amount" : 0
+    "date" : "April 14th",
+    "treat" : "white chocolate mocha",
+    "amount" : 1,
+    "drink": 1
     },
     "day 2" : {
-        "date" : "4/2",
-        "treat" : "Molly Jasmine",
-        "amount" : 1
+        "date" : "April 15th",
+        "treat" : "oolong milk tea",
+        "amount" : 1,
+        "drink":2
         },
     "day 3" : {
-    "date" : "4/3",
-    "treat" : "none",
-    "amount" : 0
+    "date" : "April 16th",
+    "treat" : "apple pie and mango smoothie",
+    "amount" : 2,
+    "drink":3
     },
     "day 4" : {
-        "date" : "4/4",
-        "treat" : "Strawberry Matcha",
-        "amount" : 1
+        "date" : "April 17th",
+        "treat" : "Strawberry overload",
+        "amount" : 1,
+         "drink":4   
         },
     "day 5" : {
-    "date" : "4/5",
+    "date" : "April 18th",
     "treat" : "none",
-    "amount" : 0
+    "amount" : 0,
+    "drink": 0
     },
     "day 6" : {
-     "date" : "4/6",
+     "date" : "April 19th",
      "treat" : "none",
-    "amount" : 0
+    "amount" : 0,
+    "drink": 0
      },
      "day 7" : {
-        "date" : "4/7",
+        "date" : "April 20th",
         "treat" : "none",
-     "amount" : 0
+     "amount" : 0,
+     "drink": 0
             },
     "day 8" : {
-    "date" : "4/8",
-    "treat" : "none",
-    "amount" : 0
-    },
+    "date" : "April 21st",
+    "treat" : "strawberry matcha",
+    "amount" : 1,
+    "drink": 5
+            },
     "day 9" : {
-        "date" : "4/9",
-        "treat" : "none",
-        "amount" : 0
-        },
-"day 10" : {
-    "date" : "4/10",
-    "treat" : "Davis Creamery, Akira",
-    "amount" : 2
-    }
+    "date" : "April 22st",
+    "treat" : "white chocolate mocha",
+    "amount" : 1,
+    "drink": 1
+            },
+    "day 10" : {
+     "date" : "April 23st",
+    "treat" : "white chocolate mocha",
+    "amount" : 1,
+    "drink": 1
+     }
 }
