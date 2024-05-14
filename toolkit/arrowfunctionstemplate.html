@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Play Video Arrow Function</h1>
+
+    <p>This play video function comes from my mini studio 1. In my studio project I have several videos playing at once and when you hover over any one of the videos, it will pause. When your mouse leaves the video, it will play again, which is where this function is used. </p>
+
+    <h2>Video Play</h2>
+    <code>
+        <pre>
+            function playVideo(video) {
+                video.play();
+            }
+           
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const playVideo = function(video){
+                video.play();
+            }
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const playVideo = video => video.play();
+        </pre>
+    </code>
+
+    <footer> Emmy Tang </footer>
+    
+</body>
+</html>
