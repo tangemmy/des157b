@@ -8,10 +8,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <!-- aos style -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
     <!-- Add link to any google fonts used here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
 
@@ -23,24 +25,45 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="curtain.mp4" type="video/mp4">
+      </video>
     <main>
+
             <section>
                 <div></div>
             </section>
             <div data-aos="zoom-out-up">
-                <header><h1>Header title</h1></header>
+                <header><h1>Take a deep breath</h1></header>
             </div>
-            <section>
-                <div></div>
-            </section>
+            <section> <div></div></section>
+           
             <div data-aos="fade-right">
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
-            </div> 
-            <section>
-                <div></div>
-            </section>
-            <div>
-                <h2>Sapiente quas ullam aspernatur distinctio, excepturi sint reiciendis odit deserunt eaque nobis?</h2>
+                <h2>inhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="fade-left" class="exhale">
+                <h2>exhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="fade-up-right">
+                <h2>inhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="fade-down-left" class="exhale">
+                <h2>exhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="fade-right">
+                <h2>inhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="fade-left" class="exhale">
+                <h2>exhale</h2>
+            </div>
+            <section></section>
+            <div data-aos="flip-up">
+                <h2 id="last">give ur self a compliment :3</h2>
             </div>
     </main>
 </body>

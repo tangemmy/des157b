@@ -1,19 +1,32 @@
 body{
     background: rgb(255,235,226);
     background: linear-gradient(0deg, rgba(255,235,226,1) 0%, rgba(229,164,199,1) 86%);
-    font-family: 'VT323';
+    font-family: 'signika negative';
+    text-align: center;
 }
 main{
     margin:auto;
     padding:0;
     width:50%;
 }
+section {
+    height: 100vh;
+}
+h2{
+    color:rgb(94, 176, 247);
+    font-size: 40px;
+}
+.exhale{
+    text-align: right;
+}
 div{
     width:300px;
     height:200px;
     
-    color:white;
-    
+    color:rgb(232, 140, 91);
+}
+section div {
+    padding-bottom: 3in;
 }
 .vt323-regular {
     font-family: "VT323", monospace;
@@ -22,6 +35,32 @@ div{
   }
   header h1{
     margin:auto;
-    text-align: center;
+    text-align: left;
+    font-size: 10em;
   }
-  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  canvas{
+    margin:auto;
+    display:block;
+    border: 10px white solid;
+  }
+  .end{
+    width:300px;
+    height:100px;
+    background-color:rgb(94, 176, 247);
+    color:white;
+    font-size: large;
+  }
+  #last{
+color:rgb(107, 217, 107);
+  }
+  #space{
+    height:10px;
+  }
