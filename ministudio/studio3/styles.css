@@ -28,11 +28,7 @@ div{
 section div {
     padding-bottom: 3in;
 }
-.vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
+
   header h1{
     margin:auto;
     text-align: left;
@@ -63,4 +59,8 @@ color:rgb(107, 217, 107);
   }
   #space{
     height:10px;
+  }
+  p{
+    font-family:'signika negative';
+    color:rgb(232, 140, 91);
   }
