@@ -1,0 +1,51 @@
+body, h1, h2 ,h3, p, img, div{
+    margin:0;
+    padding:0;
+}
+#p1{
+    color:white;
+    width:500px;
+    padding-left: 250px;
+}
+.showing{
+    visibility:visible;
+    opacity: 1;
+}
+.hidden{
+    display:none;
+    opacity:0;
+}
+body{
+    background-color: black;
+    font-family: Inconsolata;
+}
+img{
+    display:block;
+    margin:auto;
+}
+#next{
+position:absolute;
+right:17%;
+padding:10px;
+border: none;
+background-color: rgb(139, 180, 196);
+color:white;
+
+font-size: 30px;
+}
+#next:hover{
+    cursor: pointer;
+    background-color:rgb(102, 132, 144);
+}
+#guy{
+    position:fixed;
+    height:300px;
+    bottom:10%;
+    left:15%;
+}
+#platestore:hover{
+    cursor: pointer;
+}
+#clothes{
+    cursor: pointer;
+}
