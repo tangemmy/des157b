@@ -1,6 +1,6 @@
-(function() {
-    "use strict";
 
+    (function() {
+    "use strict";
     // Declare currentImage outside the event listener to maintain its state across clicks
     let currentImage = 0;
 
@@ -45,12 +45,41 @@
         }
     });
 
-    const platestore = document.querySelector("#platestore");
-    const clothesstore = document.querySelector("clothes");
+    const platestore = document.querySelector("#platesoutside");
+        const newplates = document.querySelector("#newplates");
+        const mugs = document.querySelector("#mugs");
+        const bowls = document.querySelector("#bowls");
+        const box = document.querySelector("#box");
+    const clothesstore = document.querySelector("#clothesoutside");
+    const exit = document.querySelector("#exit");
     platestore.addEventListener("click", function(event){
         event.preventDefault();
         bg1.className="hidden";
         bg2.className="showing";
 
     });
+    box.addEventListener("click", function(event){
+        event.preventDefault();
+        Swal.fire({
+            title: "Ceramics and Glass Donation Box!",
+            text: "Cracked dishes? broken tiles? Bag them up and drop them off here to the Arts and Crafts Club! Your donations will be used for local mosaic project murals.",
+            imageUrl: "images/box.PNG",
+            imageWidth: 300,
+            imageHeight: 300,
+            imageAlt: "donation box"
+          });
+          
+    });
+    
+    exit.addEventListener("click", function(event){
+        event.preventDefault();
+        if(bg2.className=="showing"){
+            bg2.className="hidden";
+            bg1.className="showing";
+        }else if(bg3.className=="showing"){
+            bg3.className="hidden";
+            bg1.className="showing";
+        }
+    });
+
 })();

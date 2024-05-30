@@ -1,0 +1,109 @@
+body, h1, h2 ,h3, p, img, div{
+    margin:0;
+    padding:0;
+}
+#p1{
+    color:white;
+    width:500px;
+    padding-left: 250px;
+}
+.showing{
+    visibility:visible;
+    opacity: 1;
+}
+.hidden{
+    display:none;
+    opacity:0;
+}
+body{
+    background-color: black;
+    font-family: Inconsolata;
+}
+img{
+    display:block;
+    margin:auto;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(139, 180, 196);
+    color:white;
+    font-size: 25px;
+}
+#next{
+position:absolute;
+right:17%;
+padding:10px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgb(102, 132, 144);
+}
+#guy{
+    position:fixed;
+    height:270px;
+    bottom:5%;
+    left:15%;
+    z-index: 1;
+}
+#platesoutside{
+    position:absolute;
+    right:-250px;
+    top:80px;
+}
+#platesoutside:hover{
+    cursor: pointer;
+}
+#clothesoutside:hover{
+    cursor: pointer;
+}
+#clothesoutside{
+    position:absolute;
+    right:-820px;
+    top:80px;
+}
+#plateinterior{
+    padding-top:10px;
+}
+#exit{
+    position:absolute;
+    top:5%;
+    left:11%;
+    padding:10px;
+}
+#exit:hover{
+    cursor: pointer;
+}
+#box:hover, #newplates:hover,#mugs:hover,#bowls:hover{
+    cursor: pointer;
+}
+#box{
+    position:absolute;
+    left:15%;
+    bottom:10px;
+}
+#shelf{
+    position:absolute;
+    right:15%;
+    bottom:10px;
+    z-index: 0;
+}
+#newplates{
+    position:absolute;
+    left:680px;
+    top:120px;
+    z-index: 1;
+}
+#mugs{
+    position:absolute;
+    left:830px;
+    top:120px;
+    z-index: 1;
+}
+#bowls{
+    position:absolute;
+    left:900px;
+    top:280px;
+    z-index: 1;
+}
