@@ -57,6 +57,14 @@
         const box = document.querySelector("#box");
     const clothesstore = document.querySelector("#clothesoutside");
     const exit = document.querySelector("#exit");
+
+    clothesstore.addEventListener("click", function(event){
+        Swal.fire({
+            title: "Sorry!",
+            text: "Taylor's having the day off today, come back tomorrow.",
+            icon: "warning"
+          });
+    })
     platestore.addEventListener("click", function(event){
         event.preventDefault();
         bg1.className="hidden";
