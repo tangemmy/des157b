@@ -1,0 +1,31 @@
+       
+       body{
+        padding:0;
+        margin:0;
+        font-family: 'IBM Plex Mono';
+        background-color: rgb(161, 195, 223);
+        color:white;
+        width:700px;
+        margin:auto;
+       }
+       main{
+           background-color: rgb(161, 195, 223);
+           margin:auto;
+           width:600px;
+           line-height: 1.5em;
+       }
+       header, div{
+           background-color: rgb(253, 247, 239);
+           color:rgb(77, 145, 212);
+           padding:20px;
+       }
+       img{
+           padding:0;
+           display: block;
+           margin:auto;
+       }
+       a{
+          
+           text-decoration: none;
+           color:rgb(77, 145, 212);
+       }

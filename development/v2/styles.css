@@ -66,13 +66,13 @@ button:hover{
 #plateinterior{
     padding-top:10px;
 }
-#exit{
+#exit, #exit2{
     position:absolute;
     top:5%;
     left:11%;
     padding:10px;
 }
-#exit:hover{
+#exit, #exit2:hover{
     cursor: pointer;
 }
 #box:hover, #newplates:hover,#mugs:hover,#bowls,#tay,#skirt,#coat,#top:hover{
@@ -112,22 +112,23 @@ button:hover{
     left:15%;
     bottom:10px;
     z-index: 1;
+    padding-bottom: 10px;
 }
 #top{
     position: absolute;
-    left:650px;
-    top:150px;
+    right:25%;
+    top:160px;
     z-index: 1;
 }
 #coat{
     position: absolute;
-    left:800px;
+    right:16%;
     top:150px;
     z-index: 1;
 }
 #skirt{
     position: absolute;
     right:10%;
-    top:150px;
+    top:140px;
     z-index: 1;
 }

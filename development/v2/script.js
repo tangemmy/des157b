@@ -8,11 +8,12 @@
       });
     // Declare currentImage outside the event listener to maintain its state across clicks
     let currentImage = 0;
-
+    let counter = 0;
     const cont = document.querySelector("#next");
     const bg1 = document.querySelector("#outside");
     const bg2 = document.querySelector("#insideplate");
-    const bg3 = document.querySelector("#insideclothes")
+    const bg3 = document.querySelector("#insideclothes");
+    
     cont.addEventListener("click", function(event) {
         event.preventDefault();
 
@@ -61,6 +62,9 @@
         const top = document.querySelector("#top");
         const coat = document.querySelector("#coat");
     const exit = document.querySelector("#exit");
+    const exit2 = document.querySelector("#exit2");
+
+    
 
     clothesstore.addEventListener("click", function(event){
         event.preventDefault();
@@ -90,6 +94,7 @@
                 text: "Thank you So much for your donation. Keep your eyes peeled to see your scraps in the next town mosaic!",
                 icon: "success"
               });
+              counter++;
             }
           });
           
@@ -102,8 +107,19 @@
             imageUrl: "images/newplates.png",
             imageWidth: 240,
             imageHeight: 300,
-            imageAlt: "new plates"
-          });
+            imageAlt: "new plates",
+            confirmButtonText: "Purchase"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Thank you for shopping at Plates n' Thingz",
+                text: "Yay! I got a new plate. This money will go towards helping Johnathan sustain his business and put food on the table for him and his family.",
+                icon: "success"
+              });
+              counter++;
+            };
+          
+    });
           
     });
     mugs.addEventListener("click", function(event){
@@ -130,6 +146,61 @@
           });
           
     });
+    tay.addEventListener("click", function(event){
+        event.preventDefault();
+        Swal.fire({
+            title: "Taylor: the owner",
+            text: "Taylor is here for all your tailoring needs! Repairs and customs for anyone, just let her know!",
+            imageUrl: "images/taylor.PNG",
+            imageWidth: 250,
+            imageHeight: 300,
+            imageAlt: "taylor be sewing",
+            confirmButtonText: "Submit a repair ticket for the apron"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Request Recieved",
+                text: "You're in luck, the rip wasnt too bad so you can come by this afternoon to pick up your apron. Feel free to browse around and come back.",
+                icon: "success"
+              });
+              counter++;
+            }
+          });
+          
+    });
+    top.addEventListener("click", function(event){
+        event.preventDefault();
+        Swal.fire({
+            title: "Teal Milk Maid Top",
+            text: "Cute cottage themed top with puffed sleeves made from breathable linen. Hand-dyed by Karol Fabrics and constructed and designed by Jessica (@jss312), from Hillside. Crafted 20XX",
+            imageUrl: "images/top.PNG",
+            imageWidth: 250,
+            imageHeight: 300,
+            imageAlt: "top"
+          });
+    });
+    coat.addEventListener("click", function(event){
+        event.preventDefault();
+        Swal.fire({
+            title: "Wool Tie-Over Coat",
+            text: "A unique take on a classic long overcoat with hanbok inspired tie closure. Wool sourced and processed by Woolenco. Hand-dyed by CoveryTextiles and constructed and designed by SeongMi (@mimiseo), from Yeppun. Crafted 20XX",
+            imageUrl: "images/coat.PNG",
+            imageWidth: 220,
+            imageHeight: 320,
+            imageAlt: "coat"
+          });
+    });
+    skirt.addEventListener("click", function(event){
+        event.preventDefault();
+        Swal.fire({
+            title: "Aysmetrical Ruffle Edge Skirt",
+            text: "Ultimate simple but girlish skirt made from cotton satin. Can easily be dressed up or down for a casual brunch or night out.Textiles from Global Textiles. Constructed and designed by Taylor, from Taylor's. Crafted 20XX",
+            imageUrl: "images/skirt.PNG",
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: "skirt"
+          });
+    });
     exit.addEventListener("click", function(event){
         event.preventDefault();
         if(bg2.className=="showing"){
@@ -140,5 +211,14 @@
             bg1.className="showing";
         }
     });
-
+    exit2.addEventListener("click", function(event){
+        event.preventDefault();
+        if(bg3.className=="showing"){
+            bg3.className="hidden";
+            bg1.className="showing";
+        }
+    });
+    if(counter==3){
+        
+    }
 })();
