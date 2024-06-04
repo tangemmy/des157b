@@ -56,9 +56,7 @@
         const bowls = document.querySelector("#bowls");
         const box = document.querySelector("#box");
     const clothesstore = document.querySelector("#clothesoutside");
-        const tay =document.querySelector("#tay");
-        const top = document.querySelector("#top");
-        const coat = document.querySelector("#coat");
+       
         
     const exit = document.querySelector("#exit");
 
@@ -132,27 +130,7 @@
           });
           
     });
-    box.addEventListener("click", function(event){
-        event.preventDefault();
-        Swal.fire({
-            title: "Ceramics and Glass Donation Box!",
-            text: "Cracked dishes? broken tiles? Bag them up and drop them off here to the Arts and Crafts Club! Your donations will be used for local mosaic project murals.",
-            imageUrl: "images/box.PNG",
-            imageWidth: 300,
-            imageHeight: 300,
-            imageAlt: "donation box",
-            confirmButtonText: "Donate the cracked plate!"
-          }).then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire({
-                title: "Donation Recieved!",
-                text: "Thank you So much for your donation. Keep your eyes peeled to see your scraps in the next town mosaic!",
-                icon: "success"
-              });
-            }
-          });
-          
-    });
+  
     exit.addEventListener("click", function(event){
         event.preventDefault();
         if(bg2.className=="showing"){

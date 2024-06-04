@@ -57,6 +57,9 @@
         const bowls = document.querySelector("#bowls");
         const box = document.querySelector("#box");
     const clothesstore = document.querySelector("#clothesoutside");
+        const tay =document.querySelector("#tay");
+        const top = document.querySelector("#top");
+        const coat = document.querySelector("#coat");
     const exit = document.querySelector("#exit");
 
     clothesstore.addEventListener("click", function(event){
