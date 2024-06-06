@@ -1,11 +1,11 @@
 
 (function() {
     "use strict";
-    Swal.fire({
-        title: "Welcome!",
-        text: "Please complete the following: Walk to the store, Enter the store and Browse items",
-        icon: "question"
-      });
+    // Swal.fire({
+    //     title: "Welcome!",
+    //     text: "Please complete the following: Walk to the store, Enter the store and Browse items",
+    //     icon: "question"
+    //   });
     // Declare currentImage outside the event listener to maintain its state across clicks
     let currentImage = 0;
     const cont = document.querySelector("#next");
@@ -17,6 +17,11 @@
     const bg2 = document.querySelector("#insideplate");
     const bg3 = document.querySelector("#insideclothes");
     
+    new TypeIt("#p1", {
+      strings: 'March 19th, 20XX <br>"Today I had the loveliest morning. The sun was finally shining after such a cloudy week and the birds were chirping away. I was even motivated to get started cleaning early so I could go for a nice stroll downtown."',
+      speed: 75,
+      loop: false,
+    }).go();
     cont.addEventListener("click", function(event) {
         event.preventDefault();
 
@@ -33,29 +38,61 @@
             bg1.className="showing";
             tasks.className="showing";
         }
-
+       
         // Update the src attribute of the slide element
         myslide.src = `images/${pictures[currentImage]}`;
+    
         if(currentImage==1){
-            myp1.innerHTML="...";
+          myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '...',
+              speed: 75,
+              loop: false,
+            }).go();
         }
         if(currentImage==2){
-            myp1.innerHTML='"UNTIL THIS"';
+          myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '"UNTIL THIS"',
+              speed: 75,
+              loop: false,
+            }).go();
         }
         if(currentImage==3){
-            myp1.innerHTML='"AGAHALFDSLHFJSDFF"';
+            myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '"AGAHALFDSLHFJSDFF"',
+              speed: 75,
+              loop: false,
+            }).go();
         }
         if(currentImage==4){
-            myp1.innerHTML='"WHY."';
+            myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '"You have got"',
+              speed: 75,
+              loop: false,
+            }).go();
         }
         if(currentImage==5){
-            myp1.innerHTML='"ME."';
+            myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '"to be kidding me "',
+              speed: 75,
+              loop: false,
+            }).go();
         }
         if(currentImage==6){
-            myp1.innerHTML='" So much for a nice peaceful day. Well, might as well deal with this now. I gotta get a new plate..and this apron fixed.I guess i still get to go out..."';
+          myp1.innerHTML='';
+            new TypeIt("#p1", {
+              strings: '" So much for a nice peaceful day. Well, might as well deal with this now. I gotta get a new plate..and this apron fixed. I guess I still get to go out..."',
+              speed: 75,
+              loop: false,
+            }).go();
         }
     });
 
+    
     const checklist = () => {
       if(t1.className=="done" && t2.className=="done" && t3.className=="done"){
         
@@ -70,8 +107,13 @@
             bg2.className="hidden";
             bg3.className="hidden";
             document.querySelector("#end").className="showing";
+            new TypeIt("#p2", {
+              strings:['"Ah. Feels nice to finish all my errands"',"What Happened to the plate? Ceramics sadly cannot be recycled so many people end up tossing it into the landfill. If the fractures aren't too bad, they can even be repaired with some sort of adhesive or porcelain filler. A popular way to  Some of the ways prevent them from going into the landfill are by to reusing them for arts and crafts. The ceramic scraps can be broken into smaller pieces to be used for making mosaics."] ,
+              speed: 75,
+              loop: false,
+            }).go();
           })
-        }, 2000);
+        }, 4000);
       }
       
     };
@@ -188,8 +230,7 @@
             if (result.isConfirmed) {
               Swal.fire({
                 title: "Request Recieved",
-                text: "You're in luck, the rip wasnt too bad so you can come by this afternoon to pick up your apron. Feel free to browse around and come back.",
-                icon: "success"
+                text: "You're in luck, the rip wasnt too bad so you can come by tomorrow to pick up your apron. Feel free to browse."
               });
               t3.className="done";
               checklist();
@@ -246,5 +287,7 @@
         }
         tasks.className="showing";
     });
+
+    
   
 })();

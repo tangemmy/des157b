@@ -7,6 +7,11 @@ body, h1, h2 ,h3, p, img, div{
     width:500px;
     padding-left: 250px;
 }
+#p2{
+    color:white;
+    width:500px;
+    padding-left: 250px;
+}
 .showing{
     visibility:visible;
     opacity: 1;
@@ -27,8 +32,9 @@ img{
 }
 button{
     border: none;
-    border-radius: 20px;
-    background-color: rgb(139, 180, 196);
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    border: solid white 2px;
     color:white;
     font-size: 25px;
 }
@@ -40,7 +46,9 @@ padding:10px;
 }
 button:hover{
     cursor: pointer;
-    background-color:rgb(102, 132, 144);
+    background-color:rgb(255, 255, 255);
+    color: rgb(36, 36, 36);
+    border-color: rgb(36, 36, 36);
 }
 #guy{
     position:fixed;
@@ -144,15 +152,15 @@ li, ul{
 #tasklist{
     background-color: rgba(29, 56, 80, 0.154);
     color:rgb(255, 255, 255);
-    position:absolute;
+    position:fixed;
     width:200px;
     height:150px;
     left:10%;
     top:10%;
     border-radius: 10px;
     padding:10px;
+    z-index: 2;
 }
 #end{
-    width:700px;
-    background-color:rgb(170, 246, 255);
+    margin:auto;
 }

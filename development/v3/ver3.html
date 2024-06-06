@@ -23,7 +23,8 @@
     <link href="
     https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css
     " rel="stylesheet">
-   
+    <!-- type animation -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- My Script -->
     <script src="script.js" defer></script>
 </head>
@@ -31,7 +32,14 @@
     <div id="story" class="showing">
         <img src="images/1.PNG" alt="pt1" id="slide" height="500">
         <button id="next">continue ></button>
-        <p id="p1">March 19th, 20XX <br>"Today I had the loveliest morning. The sun was finally shining after such a cloudy week and the birds were chirping away. I was even motivated to get started cleaning early so I could go for a nice stroll downtown."</p>
+        <p id="p1" class="showing"></p>
+        <p id="p2" class="hidden"></p>
+        <p id="p3" class="hidden"></p>
+        <p id="p4" class="hidden"></p>
+        <p id="p5" class="hidden"></p>
+        <p id="p6" class="hidden"></p>
+        <p id="p7" class="hidden"></p>
+
     </div>
     <div id="tasklist" class="hidden">
         <h3>To Do</h3>
@@ -67,9 +75,9 @@
         <button id="exit2">exit</button>
     </div>
     <div id="end" class="hidden">
-        <img src="images/1.PNG" alt="pt1" id="slide" height="500">
-        <button id="next">continue ></button>
-        <p id="p1">
+        <img src="images/last.PNG" alt="last image"  height="500">
+        <p id="p2"> </p>
+        <p></p>
     </div>
 </body>
 </html>
