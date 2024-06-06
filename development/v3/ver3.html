@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- sweetalert -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css
+    " rel="stylesheet">
+   
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="story" class="showing">
+        <img src="images/1.PNG" alt="pt1" id="slide" height="500">
+        <button id="next">continue ></button>
+        <p id="p1">March 19th, 20XX <br>"Today I had the loveliest morning. The sun was finally shining after such a cloudy week and the birds were chirping away. I was even motivated to get started cleaning early so I could go for a nice stroll downtown."</p>
+    </div>
+    <div id="tasklist" class="hidden">
+        <h3>To Do</h3>
+        <ul>
+            <li id="donateplate" class="undone">Donate cracked plate</li>
+            <li id="buyplate" class="undone">Purchase new plate</li>
+            <li id="repairapron" class="undone">Take apron for repairs</li>
+        </ul>
+    </div>
+    <div id="outside" class="hidden">
+        <img src="images/guy.PNG" alt="lil guy" id="guy">
+        <img src="images/bg1.png" alt="outside" height="610" >
+    
+        <img src="images/plateoutside.png" alt="plate outside" id="platesoutside" height="450">
+        <img src="images/clothesoutside.png" alt="clothes outside"id="clothesoutside" height="450">
+        
+    </div>
+    <div id="insideplate" class="hidden"> 
+        <img src="images/bg2.png" alt="inside plate store" height="610" id="plateinterior">
+        <img src="images/box.PNG" alt="box" width="300" id="box">   
+        <img src="images/newplates.png" alt="new plates" width="202" id="newplates">
+        <img src="images/mug.png" alt="mugs" width="225" id="mugs">
+        <img src="images/bowls.png" alt="bowls" width="225" id="bowls">
+        <img src="images/shelf.png" alt="shelf" id="shelf" height="540">
+        <button id="exit">exit</button>
+    </div>
+    <div id="insideclothes" class="hidden">
+        <img id="bg3" src="images/bg3.PNG" alt="inside taylor's clothing shop" height="610">
+        <img src="images/taylor.PNG" alt="she be sewing" height="500" id="tay">
+        <img src="images/skirt.PNG" alt="skirt" height="310" id="skirt">
+        <img src="images/coat.PNG" alt="coat" height="400" width="230" id="coat">
+        <img src="images/top.PNG" alt="top" height="250" id="top">  
+        <button id="exit2">exit</button>
+    </div>
+    <div id="end" class="hidden">
+        <img src="images/1.PNG" alt="pt1" id="slide" height="500">
+        <button id="next">continue ></button>
+        <p id="p1">
+    </div>
+</body>
+</html>
