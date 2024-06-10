@@ -21,7 +21,7 @@
     
     new TypeIt("#p1", {
       strings: 'March 19th, 20XX <br> Daisy: "Today I had the loveliest morning. The sun was finally shining after such a cloudy week and the birds were chirping away. I was even motivated to get started cleaning early so I could go for a nice stroll downtown."',
-      speed: 75,
+      speed: 30,
       loop: false,
     }).go();
     cont.addEventListener("click", function(event) {
@@ -48,7 +48,7 @@
           myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '...',
-              speed: 75,
+              speed: 30,
               loop: false,
             }).go();
         }
@@ -56,7 +56,7 @@
           myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '"UNTIL THIS"',
-              speed: 75,
+              speed: 50,
               loop: false,
             }).go();
         }
@@ -64,7 +64,7 @@
             myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '"AGAHALFDSLHFJSDFF"',
-              speed: 75,
+              speed: 50,
               loop: false,
             }).go();
         }
@@ -72,7 +72,7 @@
             myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '"You have got"',
-              speed: 75,
+              speed: 50,
               loop: false,
             }).go();
         }
@@ -80,7 +80,7 @@
             myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '"to be kidding me "',
-              speed: 75,
+              speed: 50,
               loop: false,
             }).go();
         }
@@ -88,7 +88,7 @@
           myp1.innerHTML='';
             new TypeIt("#p1", {
               strings: '" So much for a nice peaceful day. Well, might as well deal with this now. I gotta get a new plate..and this apron fixed. I guess I still get to go out..."',
-              speed: 75,
+              speed: 30,
               loop: false,
             }).go();
         }
@@ -123,36 +123,36 @@
     cont2.addEventListener("click", function(event) {
       event.preventDefault();
 
-      const pictures = ['1.PNG', '2.PNG', '3.PNG', '4.PNG', '5.PNG', '6.PNG', '7.jpg'];
-      const myslide = document.querySelector("#slide"); // Ensure this selector matches your HTML
+      const pictures2 = ['8.PNG', '9.PNG', '10.PNG', '10.PNG','11.PNG','11.PNG', '12.PNG'];
+      const myslide2 = document.querySelector("#slide2"); // Ensure this selector matches your HTML
       const myp2 = document.querySelector("#p2");
       // Increment currentImage
       currentImage2++;
 
       // Check if we've reached the last image and loop back to the first
-      if (currentImage2 > pictures.length - 1) {
-         // currentImage = 0;
-         document.querySelector("#story").className="hidden"
-          bg1.className="showing";
-          tasks.className="showing";
-      }
+      // if (currentImage2 > pictures2.length - 1) {
+      //    // currentImage = 0;
+      //    document.querySelector("#story").className="hidden"
+      //     bg1.className="showing";
+      //     tasks.className="showing";
+      // }
      
       // Update the src attribute of the slide element
-      myslide.src = `images/${pictures[currentImage]}`;
+      myslide2.src = `images/${pictures2[currentImage2]}`;
   
       if(currentImage2==1){
         myp2.innerHTML='';
           new TypeIt("#p2", {
-            strings: '<h2>What Happened to the Plate?</h2> <br> The plate was bagged and donated to the local arts and crafts center as materials for their next project.The arts and crafts center holds many workshops open to the public. This may include making jewlery or keychains from ceramic scraps. For their next large project, they are working on a community mosaic mural for the library. The idea is that even if you did not directly build the mural, if you have donated to the box, you were still a signifigcant part of helping the project come to life. When the mural is done Daisy may be able to spot the plate she donated.',
-            speed: 100,
+            strings: '<h2>What Happened to the Plate?</h2> <br> The plate was bagged and donated to the local arts and crafts center for use in their next project. This center hosts many public workshops, including sessions on making jewelry or keychains from ceramic scraps. For their next large project, they are creating a community mosaic mural for the library. The idea is that even if you did not directly work on the mural, your donation still plays a significant role in bringing the project to life. When the mural is completed, Daisy may be able to spot the plate she donated.',
+            speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==2){
         myp2.innerHTML='';
           new TypeIt("#p2", {
-            strings: 'Ceramics sadly cannot be recycled nor decomposed in compost. Many people end up tossing it into the landfill. Instead of throwing it away, they can be given a new life and repaired with special adhesives, porcelain filler, or even gold. Kintsugi is a popular Japanese art form of repairing these cracks with gold.',
-            speed: 100,
+            strings: 'Ceramics cannot be recycled or decomposed in compost, so many people end up throwing them in the landfill. However, instead of discarding broken ceramics, they can be repaired and given new life using special adhesives, porcelain filler, or even gold. Kintsugi, a popular Japanese art form, is a method of repairing cracks with gold, often a symbol of embracing and seeing the beauty of imperfections.',
+            speed: 10,
             loop: false,
           }).go();
       }
@@ -160,7 +160,7 @@
           myp2.innerHTML='';
           new TypeIt("#p2", {
             strings: 'Other alternatives for broken ceramics can be for gardening. Smaller bits can be mixed into soil to provide drainage and aeration for plants.',
-            speed: 100,
+            speed: 10,
             loop: false,
           }).go();
       }
@@ -168,23 +168,24 @@
           myp2.innerHTML='';
           new TypeIt("#p2", {
             strings: "<h2>How did the Apron Turn Out?</h2> <br> It's just like new! And even more unique than before. Daisy is a long term customer of Taylor's and knowing her so well, Taylor ended up embroidering a cat over it. Daisy loves cats.",
-            speed: 100,
+            speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==5){
           myp2.innerHTML='';
           new TypeIt("#p2", {
-            strings: 'By fixing the apron and not imediately throwing it away, we can prevent clothes and textiles from unnecessarily piling up in the landfill. Choosing reparations instead of buying new things every time lowers our consumption rate that reduces out carbon footprint. ',
-            speed: 100,
+            strings: 'By repairing the apron instead of immediately discarding it, we can prevent clothes and textiles from unnecessarily piling up in landfills. Choosing reparations instead of buying new things in general help us reduce our over all environmental impact on the earth. These practices help reduce waste and minimize the environmental impact of ceramics in landfills, promoting sustainable living by repurposing materials that would otherwise contribute to environmental degradation',
+            speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==6){
+        cont2.className="hidden";
         myp1.innerHTML='';
-          new TypeIt("#p1", {
-            strings: '" ',
-            speed: 75,
+          new TypeIt("#p2", {
+            strings: 'Remember to repair and rewear! And also reuse!',
+            speed: 20,
             loop: false,
           }).go();
       }
