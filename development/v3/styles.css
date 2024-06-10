@@ -9,8 +9,9 @@ body, h1, h2 ,h3, p, img, div{
 }
 #p2{
     color:white;
-    width:500px;
-    padding-left: 250px;
+    width:550px;
+    
+    margin:auto;
 }
 .showing{
     visibility:visible;
@@ -38,7 +39,7 @@ button{
     color:white;
     font-size: 25px;
 }
-#next{
+#next,#next2{
 position:absolute;
 right:17%;
 padding:10px;
