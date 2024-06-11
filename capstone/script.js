@@ -10,7 +10,9 @@
     let currentImage = 0;
     let currentImage2 = 0;
     const cont = document.querySelector("#next");
+    const back = document.querySelector("#back");
     const cont2 = document.querySelector("#next2");
+    const back2 = document.querySelector("#back2");
     const tasks = document.querySelector("#tasklist");
       const t1 = document.querySelector("#donateplate");
       const t2 = document.querySelector("#buyplate");
@@ -18,12 +20,25 @@
     const bg1 = document.querySelector("#outside");
     const bg2 = document.querySelector("#insideplate");
     const bg3 = document.querySelector("#insideclothes");
-    
+    const doorbell = new Audio("sound/bell.mp3");
+    const birds = new Audio("sound/bird.mp3");
+    birds.loop = false;
+    const thump = new Audio("sound/thump.mp3");
+    const rip = new Audio("sound/rip.mp3");
+    const glass = new Audio("sound/break.mp3");
+    const bleep = new Audio("sound/bleep.mp3");
+  
+  //   if(myp1.className=="showing"){
+  //   window.addEventListener("mousemove", function() {
+  //     birds.play();
+      
+  // });}else{birds.pause();};
     new TypeIt("#p1", {
       strings: 'March 19th, 20XX <br> Daisy: "Today I had the loveliest morning. The sun was finally shining after such a cloudy week and the birds were chirping away. I was even motivated to get started cleaning early so I could go for a nice stroll downtown."',
       speed: 30,
       loop: false,
     }).go();
+    
     cont.addEventListener("click", function(event) {
         event.preventDefault();
 
@@ -46,54 +61,81 @@
     
         if(currentImage==1){
           myp1.innerHTML='';
-            new TypeIt("#p1", {
+          myp1.className="hidden";
+          document.querySelector("#p2").className="showing";
+            new TypeIt("#p2", {
               strings: '...',
               speed: 30,
               loop: false,
             }).go();
+            
+            thump.play();
         }
         if(currentImage==2){
-          myp1.innerHTML='';
-            new TypeIt("#p1", {
+          document.querySelector("#p2").className="hidden";
+          document.querySelector("#p3").className="showing";
+            new TypeIt("#p3", {
               strings: '"UNTIL THIS"',
-              speed: 50,
+              speed: 30,
               loop: false,
             }).go();
+            
+          
         }
         if(currentImage==3){
-            myp1.innerHTML='';
-            new TypeIt("#p1", {
+          document.querySelector("#p3").className="hidden";
+          document.querySelector("#p4").className="showing";
+            new TypeIt("#p4", {
               strings: '"AGAHALFDSLHFJSDFF"',
               speed: 50,
               loop: false,
             }).go();
+            
+          bleep.play();
         }
         if(currentImage==4){
-            myp1.innerHTML='';
-            new TypeIt("#p1", {
+          document.querySelector("#p4").className="hidden";
+          document.querySelector("#p5").className="showing";
+            new TypeIt("#p5", {
               strings: '"You have got"',
               speed: 50,
               loop: false,
             }).go();
+            
+          glass.play();
         }
         if(currentImage==5){
-            myp1.innerHTML='';
-            new TypeIt("#p1", {
+          document.querySelector("#p5").className="hidden";
+          document.querySelector("#p6").className="showing";
+            new TypeIt("#p6", {
               strings: '"to be kidding me "',
               speed: 50,
               loop: false,
             }).go();
+            
+            rip.play();
         }
         if(currentImage==6){
-          myp1.innerHTML='';
-            new TypeIt("#p1", {
+          document.querySelector("#p6").className="hidden";
+          document.querySelector("#p7").className="showing";
+            new TypeIt("#p7", {
               strings: '" So much for a nice peaceful day. Well, might as well deal with this now. I gotta get a new plate..and this apron fixed. I guess I still get to go out..."',
               speed: 30,
               loop: false,
             }).go();
+            
         }
     });
 
+    // back.addEventListener("click", function(event){
+    //   function previousPhoto(){
+    //     currentImage--;
+    //     if(currentImage<0){
+    //         currentImage=pictures.length-1;
+    //     }
+    //     slide1.src=`images/${pictures[currentImage]}`;
+    //   }
+    // });
     
     const checklist = () => {
       if(t1.className=="done" && t2.className=="done" && t3.className=="done"){
@@ -109,7 +151,7 @@
             bg2.className="hidden";
             bg3.className="hidden";
             document.querySelector("#end").className="showing";
-            new TypeIt("#p2", {
+            new TypeIt("#p8", {
               strings: 'Daisy: "Ah. Feels nice to finish all my errands"',
               speed: 75,
               loop: false,
@@ -125,7 +167,7 @@
 
       const pictures2 = ['8.PNG', '9.PNG', '10.PNG', '10.PNG','11.PNG','11.PNG', '12.PNG'];
       const myslide2 = document.querySelector("#slide2"); // Ensure this selector matches your HTML
-      const myp2 = document.querySelector("#p2");
+      const myp2 = document.querySelector("#p8");
       // Increment currentImage
       currentImage2++;
 
@@ -141,40 +183,46 @@
       myslide2.src = `images/${pictures2[currentImage2]}`;
   
       if(currentImage2==1){
-        myp2.innerHTML='';
-          new TypeIt("#p2", {
+        document.querySelector("#p8").className="hidden";
+        document.querySelector("#p9").className="showing";
+        
+          new TypeIt("#p9", {
             strings: '<h2>What Happened to the Plate?</h2> <br> The plate was bagged and donated to the local arts and crafts center for use in their next project. This center hosts many public workshops, including sessions on making jewelry or keychains from ceramic scraps. For their next large project, they are creating a community mosaic mural for the library. The idea is that even if you did not directly work on the mural, your donation still plays a significant role in bringing the project to life. When the mural is completed, Daisy may be able to spot the plate she donated.',
             speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==2){
-        myp2.innerHTML='';
-          new TypeIt("#p2", {
+        document.querySelector("#p9").className="hidden";
+        document.querySelector("#p10").className="showing";
+          new TypeIt("#p10", {
             strings: 'Ceramics cannot be recycled or decomposed in compost, so many people end up throwing them in the landfill. However, instead of discarding broken ceramics, they can be repaired and given new life using special adhesives, porcelain filler, or even gold. Kintsugi, a popular Japanese art form, is a method of repairing cracks with gold, often a symbol of embracing and seeing the beauty of imperfections.',
             speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==3){
-          myp2.innerHTML='';
-          new TypeIt("#p2", {
+        document.querySelector("#p10").className="hidden";
+        document.querySelector("#p11").className="showing";
+          new TypeIt("#p11", {
             strings: 'Other alternatives for broken ceramics can be for gardening. Smaller bits can be mixed into soil to provide drainage and aeration for plants.',
             speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==4){
-          myp2.innerHTML='';
-          new TypeIt("#p2", {
+        document.querySelector("#p11").className="hidden";
+        document.querySelector("#p12").className="showing";
+          new TypeIt("#p12", {
             strings: "<h2>How did the Apron Turn Out?</h2> <br> It's just like new! And even more unique than before. Daisy is a long term customer of Taylor's and knowing her so well, Taylor ended up embroidering a cat over it. Daisy loves cats.",
             speed: 10,
             loop: false,
           }).go();
       }
       if(currentImage2==5){
-          myp2.innerHTML='';
-          new TypeIt("#p2", {
+        document.querySelector("#p12").className="hidden";
+        document.querySelector("#p13").className="showing";
+          new TypeIt("#p13", {
             strings: 'By repairing the apron instead of immediately discarding it, we can prevent clothes and textiles from unnecessarily piling up in landfills. Choosing reparations instead of buying new things in general help us reduce our over all environmental impact on the earth. These practices help reduce waste and minimize the environmental impact of ceramics in landfills, promoting sustainable living by repurposing materials that would otherwise contribute to environmental degradation',
             speed: 10,
             loop: false,
@@ -182,9 +230,11 @@
       }
       if(currentImage2==6){
         cont2.className="hidden";
-        myp1.innerHTML='';
-          new TypeIt("#p2", {
-            strings: 'Remember to repair and rewear! And also reuse!',
+        
+        document.querySelector("#p13").className="hidden";
+          document.querySelector("#p14").className="showing";
+          new TypeIt("#p14", {
+            strings: 'Remember to repair and rewear! And also reuse! <br> Made by Emmy Tang. Sounds by Pixelbay',
             speed: 20,
             loop: false,
           }).go();
@@ -209,12 +259,14 @@
         bg1.className="hidden";
         tasks.className="hidden";
         bg3.className="showing";
+        doorbell.play();
     })
     platestore.addEventListener("click", function(event){
         event.preventDefault();
         bg1.className="hidden";
         tasks.className="hidden";
         bg2.className="showing";
+        doorbell.play();
 
     });
     box.addEventListener("click", function(event){
